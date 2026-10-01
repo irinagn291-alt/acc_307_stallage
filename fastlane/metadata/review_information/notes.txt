@@ -1,17 +1,22 @@
-Camera permission is requested the first time Scan reaches the pre-permission screen and the user taps Continue. The system usage string is: Stallage uses the camera to read a barcode or QR on a tagged tool, cable, camera, or costume so it can be seated in a stall. If denied, the app shows Camera is off with Open Settings, and typing a code remains available. A system notification permission prompt may appear near cold launch with no custom in-app explanation screen. Photos, microphone, location, and tracking are not requested.
+Thank you for the review. We retested the build under review on a clean device. We could not reproduce a crash, a dead end, an empty screen, or a non-functioning feature.
 
-There is no login, no in-app purchase, no public or shared user-generated content feed, no account deletion flow, and no App Tracking Transparency prompt.
+Three behaviours are deliberate and can look like a stalled control.
 
-Stallage is a dark, on-device crib for production and costume gear. Belongings live in named stalls as Tags. It is for people who need to know where a tool, cable, camera, or costume sits and who last took it. No credentials or demo account are needed.
+1. On Scan, "Seat or hop" stays disabled while "Type or paste a code" is empty. Enter a code, then tap. "Save stall" and "Continue" on "Name this Tag" stay disabled while empty. "Later" leaves "Unnamed Tag".
+2. Lifecycle can show "No hops yet" before any hop. Tap "Open Inventory", seat a Tag, select another stall chip, Scan that known Tag to hop it, then return.
+3. A "Relinquished" Tag does not hop. The notice is "This Tag is relinquished. Hops stay frozen." Dock "Relinquish" is disabled on that Tag. Other scans can still seat.
 
-Cold launch shows a brief dark screen. If onboarding is unfinished, a full-screen cover appears that cannot be dismissed by swipe. Use Next on pages 1 through 3, Continue on page 4, or Skip on any page. Continue or Skip finishes onboarding; if there are no stalls yet, Bench, Crew hold, and Repair pane are created. The main shell shows the segmented control Inventory, Lifecycle, and Settings (accessibility label Crib). On Inventory, select a stall chip so Scan is enabled, then tap Scan. On the Scan cover, tap Continue if shown for camera permission, or use Type or paste a code and Seat or hop. After seating an unknown code, Name this Tag may appear; use Continue or Later. To hop, open another stall and scan a known Tag. Open Lifecycle for overdue Issued Tags and hop trail. Open Settings to Add a stall, use Show stall QR from Inventory when a stall is open, open Stall then hop, Contact, Re-run onboarding, or Reset all data.
+Full review path. No account, no login:
+- Cold launch is a brief dark screen. A notification permission prompt may appear. Unfinished onboarding is a full-screen cover that cannot be dismissed by swipe. Use "Next" on pages 1-3, "Continue" on page 4, or "Skip" on any page. "Continue" or "Skip" finishes. If there are no stalls, "Bench" ("In stall"), "Crew hold" ("Lent"), and "Repair pane" ("Repair") are created. The shell is "Inventory" / "Lifecycle" / "Settings" (accessibility label "Crib").
+- Inventory: date; "Hops" opens "Stall then hop"; title is the open stall or "Open a stall". Stall chips choose the open stall. "Show stall QR" once a stall is open. "Search names and codes"; chips "All", "In stall", "Issued", "Repair", "Relinquished". Dock: "QR", "Peel" or "Remove", "Relinquish", "Scan" ("Open a stall first" until a chip is selected). Empty: "Scan your first Tag" or "Open Settings".
+- Scan: "Scan into this stall" or the stall name; "Close"; "Received by, if Lent". First time: "Read a barcode or QR", "Continue", then the system camera dialog. Denied: "Camera is off", "Open Settings"; typing still works. "Type or paste a code", then "Seat or hop". A new seat may show "Name this Tag". A stall code opens that stall. To hop, open another stall and scan a known Tag.
+- QR cover: Tag or stall name, or "QR"; "Share QR"; "Close".
+- Stall then hop: "Seat here. Hop there." or hop rows; "Open Inventory".
+- Lifecycle: "Overdue", "Hops", "Trail", "Next hop" or "Hop trail", "Seated now". Empty uses "Open Inventory".
+- Settings: "Stalls"; "Rename stall"; "Add a stall"; "Stall then hop"; "How a scan seats or hops"; "Contact"; "Re-run onboarding"; "Reset all data".
 
-Inventory, stalls, Tags, hops, trail, search, and QR remain on this device. Settings Contact opens the support page.
+Finishing onboarding on an empty crib creates "Bench", "Crew hold", and "Repair pane" with no Tags. Simulator-only first runs may add "Relic shelf" and Tags such as "Body 5D". The crib and finished onboarding restore on relaunch. "Later" leaves naming unfinished. "Re-run onboarding" does not erase data. "Reset all data" clears the crib on this device.
 
-There is no region lock. The UI is English only; dates follow the device locale.
+Technical facts: no accounts, no in-app purchases, no ads, no analytics, no App Tracking Transparency prompt. Camera is asked when Scan shows "Read a barcode or QR" and the user taps "Continue". Usage string: "Stallage uses the camera to read a barcode or QR on a tagged tool, cable, camera, or costume so it can be seated in a stall." A notification prompt may appear near launch with no in-app copy. Photos, microphone, location, and tracking are not requested. Data stays on this device. No region lock. English only; dates follow the device locale. Portrait only, iPhone and iPad, iOS 17.0 and later.
 
-No licence or regulated-industry paperwork applies. The app is a personal on-device crib for gear Tags and does not provide professional certification, medical, or regulated services.
-
-The app is a personal log only and gives no recommendations. It shows no health, medical, fitness, or product-nutrition information.
-
-The app scans barcodes and QR codes. A scannable QR (qr-code.png) is attached to this review; it encodes Body 5D. Simulator users type Body 5D in Type or paste a code, then Seat or hop.
+If the problem appeared on a specific device, screen, or step, please tell us which one and the exact wording you saw. We will fix it and resubmit the same day.
