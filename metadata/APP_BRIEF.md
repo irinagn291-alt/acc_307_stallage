@@ -1,4 +1,4 @@
-<!-- gf-brief source=7a3a94666bd0fd6cafba2ff9cc290911e25c1c6ecccefdb408d985a7f714428d written=2026-09-27T23:53:39+03:00 -->
+<!-- gf-brief source=5430feeebda4ec36022543ee74d1292e61c18b58f2d7f596f5bd2e4f32c24d85 written=2026-10-01T16:14:02+03:00 -->
 # Stallage
 
 ## What it is
